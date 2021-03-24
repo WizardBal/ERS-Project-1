@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href ="../CSS/employeeCSS.css">
+</head>
+<body style="text-align:center;">
+
+	logged in as Employee
+	<form method = "post" action="/Project1-mk/logout.change">
+	<button id="logO" value="logout">Logout</button>
+	</form>
+	<div class="createR-container">
+		<h3>Create a ticket here<br/></h3>
+		<form method = "post" action="/Project1-mk/createReim.change">
+			<input placeholder="Enter Amount" name="amount"/><br/>
+			<input placeholder="Enter TypeID" name="typeId"/><br/>
+			<input placeholder="Enter Description" name="reimb_description"><br/>
+			<input type ="submit" value="Create Reimbursement"/>
+		</form>
+	</div>
+	<br>
+	<div class="reim-container">
+			<p>View Your Reimbursements</p>
+		<button id="b1" value="View Reimbursements">View My Reimbursements</button>
+	</div>
+	<script src="./resources/js/employeeJSON.js"></script>
+	<div id="table1"></div>
+</body>
+</html>

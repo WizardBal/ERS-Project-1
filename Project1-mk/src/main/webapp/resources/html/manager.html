@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href ="../CSS/managerCSS.css">
+</head>
+<body style="text-align:center;">
+	<h1>Logged in as Manager</h1>
+	<form method = "post" action="/Project1-mk/logout.change">
+	<button id="logO" value="logout">Logout</button>
+	</form>
+	<div class="reim-container">
+		<h3>View all Requests or Approve/Deny a request by ID.</h3>
+			<button id="all" value="View Reimbursements">View All Reimbursements</button>
+			<button id="p1" value="View Pending Reimbursements">View Pending</button>
+			<button id="a1" value="View Approved Reimbursements">View Approved</button>
+			<button id="d1" value="View Denied Reimbursements">View Denied</button>
+	</div>
+	<br>
+	<div><form method = "post" action="/Project1-mk/approve.change">
+			<p>Enter Reimbursement ID to Approve: 
+			<input type ="number" placeholder="Enter Request ID" name="approveId"
+			min="1" max="500"/><br/>
+			<input type ="submit" value="Approve"/>
+			</p>
+		</form>
+	</div>
+	<br>
+	<div><form method = "post" action="/Project1-mk/deny.change">
+			<p>Enter Reimbursement ID to Deny: 
+			<input type ="number" placeholder="Enter Request ID" name="denyId"
+			min="1" max="500"/><br/>
+			<input type ="submit" value="Deny"/>
+			</p>
+		</form>
+	</div>
+	<br>
+	<br>
+	<br>
+	<script src="./resources/js/managerJSON.js"></script>
+	<div id="table1" style="text-align:center;" ></div>
+	
+</body>
+</html>
