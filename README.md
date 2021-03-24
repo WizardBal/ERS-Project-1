@@ -12,6 +12,8 @@ Technologies Used
     JavaScript – ES6
     JAVA – Version 8
     Maven – Version 3.1
+    Servlets
+    
 
 Features
 
